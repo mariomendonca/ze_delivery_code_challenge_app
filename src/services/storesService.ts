@@ -21,3 +21,12 @@ export type Store = {
 export async function findAllStores() {
   return await api.get('/stores')
 }
+
+export async function findNearestStores(lat: number, lng: number) {
+  return await api.get('/stores/nearest', {
+    params: {
+      lat,
+      lng
+    }
+  })
+}

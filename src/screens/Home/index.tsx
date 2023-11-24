@@ -49,7 +49,6 @@ export function Home() {
                 latitude: store.address.x,
                 longitude: store.address.y
               }}
-
             />
           </Box>
         ))}

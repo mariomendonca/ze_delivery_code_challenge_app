@@ -1,13 +1,15 @@
+import 'react-native-gesture-handler'
+
 import { config } from '@gluestack-ui/config'
 import { GluestackUIProvider } from '@gluestack-ui/themed'
 import { StatusBar } from 'expo-status-bar'
-import { Home } from './src/screens/Home'
+import { Routes } from './src/routes'
 
 export default function App() {
   return (
     <GluestackUIProvider config={config}>
       <StatusBar style="auto" />
-      <Home />
+      <Routes />
     </GluestackUIProvider>
   )
 }
